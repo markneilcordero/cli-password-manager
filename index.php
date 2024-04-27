@@ -52,7 +52,6 @@ class PasswordManager
     return openssl_decrypt($encrypted, $cipher, $key, OPENSSL_RAW_DATA, $iv);
   }
 
-
   private function viewPasswords()
   {
     $query = "SELECT * FROM passwords";
